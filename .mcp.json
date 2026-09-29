@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "uibowl": {
+      "type": "http",
+      "url": "https://uibowl.io/api/mcp"
+    },
+    "mobbin": {
+      "type": "http",
+      "url": "https://api.mobbin.com/mcp"
+    }
+  }
+}
