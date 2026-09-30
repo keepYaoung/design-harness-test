@@ -8,6 +8,6 @@ git -C "$tool_dir/.." submodule update --init tool/scrapling
 UV_CACHE_DIR="$tool_dir/.cache/uv" uv sync --project "$tool_dir/artemis-codex" --frozen
 npm ci --prefix "$tool_dir" --cache "$tool_dir/.cache/npm" --no-fund
 uv venv --quiet "$tool_dir/scrapling/.venv"
-UV_CACHE_DIR="$tool_dir/.cache/uv" uv pip install --quiet --python "$tool_dir/scrapling/.venv/bin/python" -e "$tool_dir/scrapling[ai]"
+UV_CACHE_DIR="$tool_dir/.cache/uv" uv pip install --quiet --python "$tool_dir/scrapling/.venv/bin/python" -e "$tool_dir/scrapling[ai]" "mcp<2"
 command -v adb >/dev/null || echo 'Optional: adb (Android 캡처·자동화에 필요)' >&2
 echo 'Installed. Scrapling 브라우저가 필요하면: bash tool/run.sh scrapling install'
