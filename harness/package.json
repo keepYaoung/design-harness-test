@@ -1,5 +1,5 @@
 {
-  "name": "design-harness",
+  "name": "mock-design-harness",
   "private": true,
   "type": "module",
   "engines": { "node": ">=20" },
