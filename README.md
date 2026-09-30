@@ -39,6 +39,6 @@ node harness/scripts/score.mjs         # 하네스 점수 (100점)
 4. Claude Code 에서 "1.2.0 QA 시트 하네스 돌려줘" 처럼 말하면 `run-harness` 스킬이 단계를 돌린다
 
 ## 필요 환경
-- Node 20+ · macOS (스크린샷 OCR 은 Vision 프레임워크 — 다른 OS 에서는 S4·S6·S7·S9 OCR 부분만 빠진다)
+- Node 20+ · macOS — 스크린샷 P4 는 macOS 필수 (Vision OCR · `swiftc` 가 없으면 P4 전체가 exit 2)
 - 선택: Figma MCP (ux U7 지문 대조) · UI Bowl · Mobbin MCP (레퍼런스) · 노션 MCP (파생본 동기화) · 분석 도구 MCP (events E9)
 - 외부 도구 설치: `bash tool/setup.sh` (artemis-codex · scrapling — `.mcp.json` 이 `tool/run.sh` 로 띄운다)
