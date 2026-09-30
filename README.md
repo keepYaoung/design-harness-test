@@ -1,4 +1,4 @@
-# design-harness
+# mock-design-harness
 
 반복되는 디자인·프로덕트 작업(화면 설계 · 스토어 스크린샷 · 릴리즈 QA 시트 · 이벤트 시트)을
 Claude Code · Codex 같은 에이전트가 **같은 품질 기준으로** 수행하게 만드는 하네스 뼈대.
