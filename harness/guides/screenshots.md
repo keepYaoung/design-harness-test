@@ -6,7 +6,7 @@
 |---|---|---|---|---|
 | P1 수집 | collector (릴리즈 노트) | `templates/screenshots/scope.md` | ART | P1 |
 | P2 설계 | planner | `templates/screenshots/copy.csv` | ART | P1 |
-| P3 제작 | maker — 기기 조작 도구로 캡처 `raw/` · 템플릿 렌더 `out/` | — | ART | — |
+| P3 제작 | maker — artemis-codex 캡처 `raw/` · 템플릿 렌더 `out/` | — | ART | — |
 | 👤 | 사람 | `templates/common/approval.md` | APPROVAL | P2 |
 | P4 대조 | judge (+ macOS Vision OCR) | — | ★A2 신뢰 신호 · ★B1 · S1 규격 · S2 언어 · S3 줄 수 · S4 폐기 기능 문구 · S5 em dash·이모지 · S6 개인정보 · S7 금지 색·시각 · S8 표기 · S9 언어 혼입 | 카피는 P2, 캡처·렌더는 P3 |
 | P5 파생 | publisher → 앱 리포 (`publish_to_app_repo`) | `templates/common/publish.json` | ART | P5 |

@@ -22,6 +22,7 @@ Claude Code · Codex 같은 에이전트가 **같은 품질 기준으로** 수�
 | `harness/scripts/` | 판정 `verify.mjs` · 저장 `save-blocks.mjs` · QA/이벤트 도구 · Figma 지문 `figma-export.figma.js` · 점수 `score.mjs` · guard hook 3개 · OCR `ocr.swift` |
 | `harness/templates/` · `harness/guides/` | 단계별 산출물 양식 · 업무별 가이드 |
 | `harness/tests/` | 게이트별 통과·실패 테스트 — 중립 예시 규칙 `tests/fixtures/rules.test.yaml` 로 돈다 |
+| `tool/` | 하네스가 부르는 외부 도구 — 역할은 [tool/README.md](tool/README.md) |
 | `.claude/` | 에이전트 5개(collector · planner · maker · publisher · judge) · `run-harness` 스킬 · hook 설정 |
 
 ## 시작하기
@@ -40,3 +41,4 @@ node harness/scripts/score.mjs         # 하네스 점수 (100점)
 ## 필요 환경
 - Node 20+ · macOS (스크린샷 OCR 은 Vision 프레임워크 — 다른 OS 에서는 S4·S6·S7·S9 OCR 부분만 빠진다)
 - 선택: Figma MCP (ux U7 지문 대조) · UI Bowl · Mobbin MCP (레퍼런스) · 노션 MCP (파생본 동기화) · 분석 도구 MCP (events E9)
+- 외부 도구 설치: `bash tool/setup.sh` (artemis-codex · scrapling — `.mcp.json` 이 `tool/run.sh` 로 띄운다)

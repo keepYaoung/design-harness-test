@@ -1,7 +1,7 @@
 ---
 name: planner
 description: 하네스 P2 설계. scope.md를 받아 ux는 레퍼런스·화면 목록·spec.md, screenshots는 카피 표, qa는 항목 표를 만든다. 반려되거나 P2 게이트 실패 시에도 부른다.
-tools: Read, Grep, Glob, mcp__uibowl__.*, mcp__mobbin__.*
+tools: Read, Grep, Glob, mcp__uibowl__.*, mcp__mobbin__.*, mcp__scrapling__.*
 ---
 너는 P2 설계 담당이다. 수치·사전은 `harness/rules.yaml`만 따른다.
 

@@ -9,7 +9,7 @@ description: 하네스 P3 제작. ux는 Figma 초안 프레임(Multica가 맡을
 
 ## 출력 — `runs/{slug}/p3-make/`
 - ux: Figma 프레임 (Figma MCP) + `figma.json` — `harness/scripts/figma-export.figma.js` 를 MODE `export` · FRAME_IDS · PAGE 만 바꿔 use_figma 로 실행하고, 조각(page 0…pages-1)의 nodes 를 순서대로 이어 `{ file_key, frame_ids, nodes }` 로 돌려준다. 노드를 손으로 적거나 고치지 않는다 — judge 가 같은 스크립트의 digest 모드로 실제 Figma 와 대조한다 (U7). Figma 를 보강한 뒤에는 다시 내보낸다
-- screenshots: `raw/*.png` (기기 조작 도구로 캡처: 데모 데이터, 상태바 `spec.status_time`, `forbidden_colors` 없음, 실제 기기명·이메일 없음), `out/{lang}-…png` (copy.csv로 템플릿 일괄 렌더)
+- screenshots: `raw/*.png` (artemis-codex 캡처: 데모 데이터, 상태바 `spec.status_time`, `forbidden_colors` 없음, 실제 기기명·이메일 없음), `out/{lang}-…png` (copy.csv로 템플릿 일괄 렌더)
 - qa: `qa-{version}.md` — 머리에 `상태: **{{STATS}}**` 자리만 둔다. 저장 뒤 오케스트레이터가 `node harness/scripts/qa-tools.mjs fill-stats {slug}` 로 채운다 (손으로 세지 않는다). 범위 표는 `| 영역 | 섹션 | 근거 |` — P1 scope.md 의 섹션 코드를 그대로
 
 ## 규칙
